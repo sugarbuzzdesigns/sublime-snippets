@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+Backbone.Model.extend({
+	$1
+});
+]]></content>
+	<tabTrigger>bm</tabTrigger>
+</snippet>

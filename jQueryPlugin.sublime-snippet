@@ -1,0 +1,36 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * Skeleton for jQuery Plugin
+ *
+ *
+ **/
+;(function(\$){
+
+    var objectName = {
+        property1: "someProperty",
+        property2: "someOtherProperty",
+
+        init:function(container, params){
+            this.container = \$(container);
+
+            this.prepareParams(params);
+        },
+
+        prepareParams:function(params){
+            \$.extend(this, params);
+        }, 
+    }   
+
+    \$.fn.objectName = function(params){
+        return \$(this).each(function(){
+            var o = Object.create(objectName).init(\$(this), params);
+            \$(this).data("objectName", o);
+        });
+    };
+
+}(jQuery));
+]]></content>
+    
+    <tabTrigger>plugin</tabTrigger>
+</snippet>

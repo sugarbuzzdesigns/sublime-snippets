@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[\$(function(){
+	$1		
+});
+]]></content>
+	<tabTrigger>ready</tabTrigger>
+</snippet>
